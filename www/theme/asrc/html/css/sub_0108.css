@@ -1,0 +1,588 @@
+@charset "utf-8";
+
+/* 서브 레이아웃 */
+	#sbody { display:block; width:1000px; margin:0 auto 60px auto; overflow:hidden; }
+	#sbody:after { display:block; content:''; clear:both; }
+
+/* 서브 비쥬얼 */
+	.sub_visual { display:block; width:100%; height:245px; overflow:hidden; }
+	.sub_visual .svisual_area { display:block; width:100%; height:100%; }
+	.sub_visual .svisual_area .sub_slogan { display:block; width:1000px; margin:0 auto; }
+	.sub_visual .svisual_area .sub_slogan1 { padding-top:60px; }
+
+/* LNB */
+	.ln_area { display:block; float:left; width:205px; overflow:hidden; }
+	.ln_area .h2_label { display:block; width:205px; height:102px; line-height:102px; font-size:24px; font-weight:600; color:#fff; text-align:center; background:url('../images/sub/h2_bg.jpg') no-repeat left top; }
+	.ln_area .h2_label2 { line-height:33px; padding-top:20px; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; }
+
+	.ln_area .ln { display:block; list-style:none; margin:0; padding:0; }
+	.ln_area .ln li { display:block; }
+	.ln_area .ln li .s_label { display:block; line-height:44px; padding-left:15px; font-size:14px; color:#666; border-bottom:1px solid #dbdbdb; }
+	.ln_area .ln li:hover .s_label { font-weight:600; color:#007cc3; background:url('../images/sub/ln_over.gif') no-repeat 171px 50%; }
+	.ln_area .ln li.current .s_label { font-weight:600; color:#007cc3; background:url('../images/sub/ln_over.gif') no-repeat 171px 50%; }
+	.ln_area .ln li.current .sln { display:block; }
+
+	.ln_area .ln li .sln { display:none; border-bottom:1px solid #dbdbdb; }
+	.ln_area .ln li .sln ul { display:block; list-style:none; margin:0; padding:0; }
+	.ln_area .ln li .sln ul li { display:block; }
+	.ln_area .ln li .sln ul li a { display:block; line-height:29px; padding-left:26px; font-size:12px; color:#888; background:url('../images/sub/blet.gif') no-repeat 16px 50%; }
+	.ln_area .ln li .sln ul li a:hover { font-weight:600; color:#e75717; }
+	.ln_area .ln li.current .sln ul li.current a { font-weight:600; color:#e75717; }
+
+	.ln_area .ln li .sln ul li:first-child a { margin-top:15px; }
+	.ln_area .ln li .sln ul li:last-child a { margin-bottom:15px; }
+
+/* LNB Banner  */
+	.ln_area .ln_banner { display:block; margin:40px 0 0; border-right:1px solid #dbdbdb; border-bottom:1px solid #dbdbdb; }
+	.ln_area .ln_banner ul { display:block; list-style:none; margin:0; padding:0; }
+	.ln_area .ln_banner ul:after { display:block; content:''; clear:both; }
+	.ln_area .ln_banner ul li { display:block; float:left; }
+	.ln_area .ln_banner ul li a { display:block; width:102px; height:101px; padding-top:70px; font-size:13px; color:#444; text-align:center; border-left:1px solid #dbdbdb; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; }
+
+	.ln_area .ln_banner ul li a:hover { font-weight:600; }
+
+	.ln_area .ln_banner ul li:first-child a { border-top:1px solid #007cc3; background:url('../images/sub/ln_banner_bg1.jpg') no-repeat left top; }
+	.ln_area .ln_banner ul li:nth-child(2) { border-top:1px solid #e75717; background:url('../images/sub/ln_banner_bg2.jpg') no-repeat left top; }
+	.ln_area .ln_banner ul li:nth-child(3) { border-top:1px solid #91c901; background:url('../images/sub/ln_banner_bg3.jpg') no-repeat left top; }
+	.ln_area .ln_banner ul li:nth-child(4) { border-top:1px solid #ff7700; background:url('../images/sub/ln_banner_bg4.jpg') no-repeat left top; }
+
+/* 컨텐츠 영역 정의 */
+	.sub_cnt { display:block; float:right; width:750px; }
+	.sub_cnt .feedback { display:block; height:101px; margin:0 0 30px; border-bottom:1px solid #dbdbdb; overflow:hidden; }
+	.sub_cnt .feedback:after { display:block; content:''; clear:both; }
+	.sub_cnt .feedback .fb_left { display:block; float:left; }
+	.sub_cnt .feedback .fb_left .h3_label { padding-top:40px; font-size:33px; font-weight:600; color:#222; }
+
+	.sub_cnt .feedback .process { display:block; float:right; padding-top:60px; }
+	.sub_cnt .feedback .process span { display:inline-block; margin-left:6px; font-size:12px; color:#888; }
+
+/* 서브 컨텐츠 공통 태그 정의 */
+	.h4_label { display:block; line-height:33px; margin:0 0 22px; padding-left:27px; font-size:28px; font-weight:300; color:#333; background:url('../images/sub/h4_bg.gif') no-repeat left 50%; }
+	.h5_label { display:block; line-height:1.4; margin:0 0 20px; padding-left:17px; font-size:18px; font-weight:600; color:#ff7700; background:url('../images/sub/h5_bg.gif') no-repeat left 8px; }
+
+	.common_text { display:block; line-height:24px; font-size:13px; color:#666; }
+
+	.common_list { display:block; }
+	.common_list ul { display:block; list-style:none; margin:0; padding:0; }
+	.common_list ul li { display:block; line-height:30px; padding-left:10px; background:url('../images/sub/blet2.gif') no-repeat left 13px; letter-spacing:-0.5px; }
+	.common_list ul li span { display:inline-block; font-weight:600; color:#444; }
+
+	.common_list ol { display:block; list-style:none; margin:0 0 20px; padding:0; }
+	.common_list ol li { display:block; line-height:30px; }
+	.common_list ol li span { display:inline-block; width:19px; height:19px; line-height:19px; margin-right:10px; font-size:13px; text-align:center; background:#f5f5f5; border:1px solid #dcdcdc; border-radius:100%; -moz-border-radius:100%; -webkit-border-radius:100%;}
+
+	.common_arrow { display:block; padding-left:22px; font-weight:600; background:url('../images/sub/icon1.gif') no-repeat left 50%; }
+	.common_arrow span { color:#ff7700; }
+	.common_arrow2 { display:block; padding-left:22px; font-weight:400; background:url('../images/sub/icon1.gif') no-repeat left 50%; }
+	.common_arrow2 span { color:#ff7700; }
+	
+	.common_box { display:block; margin:0 0 70px; background:#fbfbfb; border:1px solid #dbdbdb; }
+	.common_box ul { display:block; list-style:none; margin:0; padding:25px 30px; }
+	.common_box ul li { display:block; line-height:30px; padding-left:10px; font-size:14px; background:url('../images/sub1/blet.gif') no-repeat left 14px; letter-spacing:-0.3px; }
+	.common_box ul li span { display:inline-block; font-weight:600; color:#444; }
+
+	.common_tabs { display:block; margin:0 0 50px; }
+	.common_tabs:after { display:block; content:''; clear:both; }
+	.common_tabs a { display:block; float:left; width:146px; height:47px; line-height:47px; margin:0 5px 10px 0; font-size:14px; color:#555; text-align:center; border:1px solid #ddd; letter-spacing:-0.2px; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; }
+	.common_tabs a:nth-child(5n) { margin-right:0; }
+
+	.common_tabs a.current { font-weight:600; color:#fff; background:#007cc3; border-color:#007cc3; }
+
+	.common_table { display:block; margin:0 0 25px; border-top:2px solid #007cc3; }
+	.common_table table { width:100%; border-collapse:collapse; border-spacing:0; }
+	.common_table table th, .common_table table td { padding:10px 0; border:1px solid #dbdbdb; }
+	.common_table table thead th { color:#444; background:#fbfbfb; }
+	.common_table table tbody th { line-height:23px; font-weight:300; color:#444; background:#fdfdfd; }
+	.common_table table td { line-height:24px; color:#666; }
+	.common_table table td span.txt1 { display:block; margin-top:-5px; font-size:12px; color:#999; }
+	.common_table table td .blet { display:block; line-height:24px; padding-left:10px; background:url('../images/sub/blet2.gif') no-repeat left 12px; }
+
+	.common_process { display:block; }
+	.common_process ol { display:block; list-style:none; margin:0; padding:0; }
+	.common_process ol:after { display:block; content:''; clear:both; }
+	.common_process ol li { display:block; float:left; text-align:center; }
+
+	.reference { position:relative; display:block; font-size:12px; color:#999; }
+	.download { position:absolute; display:block; width:147px; height:32px; line-height:32px; font-size:13px; color:#fff !important; background:#007cc3 url('../images/sub/down_bg.gif') no-repeat left top; border-radius:5px; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; overflow:hidden; }
+
+/* 복지관소개 : 인사말 */
+	.ceo_massege { display:block; min-height:487px; background:url('../images/sub1/ceo_massege_bg.jpg') no-repeat right top; }
+	.ceo_massege .text1 { display:block; line-height:36px; padding-top:30px; font-size:28px; font-weight:300; color:#333; }
+	.ceo_massege .text1 span { color:#007cc3; }
+	.ceo_massege .text_area { display:block; line-height:24px; margin-top:39px; font-size:14px; color:#444; }
+	.ceo_massege .sign { font-size:14px; font-weight:300; text-align:right; } 
+
+/* 복지관소개 : 법인소개 */
+	.about_corporation { display:block; }
+	.about_corporation .text1 { line-height:24px; }
+	.about_corporation .summary_area { display:block; list-style:none; height:230px; margin:25px 0 60px 0; padding:0 0 0 16px; background:url('../images/sub1/summary_bg.jpg') no-repeat right top; border-top:2px solid #007cc3; border-bottom:1px solid #d6d6d6; }
+	.about_corporation .summary_area li { position:relative; display:block; line-height:24px; margin:0 0 17px; padding-left:87px; font-size:14px; color:#666; }
+	.about_corporation .summary_area li span { position:absolute; display:block; left:0; top:0; font-size:14px; font-weight:600; color:#444; }
+	.about_corporation .summary_area li:first-child { margin-top:7px; }
+	.about_corporation .summary_area li:last-child { margin:0; }
+
+	.about_corporation .history { position:relative; display:block; background:url('../images/sub1/history_bg.gif') repeat-y left top; }
+	.about_corporation .history ul { display:block; list-style:none; margin:0 0 40px; padding:0; }
+	.about_corporation .history ul li { position:relative; display:block; line-height:34px; }
+	.about_corporation .history ul li .year { position:absolute; left:0; top:0; font-size:30px; font-weight:600;  }
+	.about_corporation .history ul li .month { position:absolute; display:block; left:183px; top:0; font-size:14px; font-weight:600; color:#444; }
+	.about_corporation .history ul li .text { display:block; margin-left:224px; padding-left:10px; font-size:14px; color:#666; background:url('../images/sub/blet1.gif') no-repeat left 16px; }
+	.about_corporation .history ul li .icon { position:absolute; left:117px; top:10px; }
+
+	.about_corporation .history ul:nth-child(odd) li .year { color:#444; }
+	.about_corporation .history ul:nth-child(even) li .year { color:#007cc3; }
+
+	.about_corporation .history .box1 { position:absolute; display:block; left:114px; top:0; width:20px; height:10px; background:#fff; }
+	.about_corporation .history .box2 { position:absolute; display:block; left:114px; bottom:0; width:20px; height:43px; background:#fff; }
+
+/* 복지관소개 : 기관소개 : 설립목적 및 비전 */
+	.purpose_vision_area { display:block; }
+	.purpose_vision_area .mission { display:block; height:175px; margin:0 0 60px; background:url('../images/sub1/mission_bg.jpg') no-repeat right top; }
+	.purpose_vision_area .mission:after { display:block; content:''; clear:both; }
+	.purpose_vision_area .mission .text { display:block; float:left; width:175px; height:175px; line-height:175px; font-size:20px; color:#fff; text-align:center; }
+	.purpose_vision_area .mission .text2 { line-height:30px; margin:0 112px; padding-top:44px; color:#666; }
+	.purpose_vision_area .mission .text2 span { font-weight:600; color:#333; }
+
+	.purpose_vision_area .vision { display:block; margin:0 0 55px; }
+	.purpose_vision_area .vision:after { display:block; content:''; clear:both; }
+	.purpose_vision_area .vision dl { display:block; float:left; width:230px; height:109px; line-height:24px; padding:15px 0 0 20px; border:1px solid #dbdbdb; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; overflow:hidden; }
+	.purpose_vision_area .vision dl dt { display:block; margin:0 0 2px; font-size:13px; font-weight:300;  }
+	.purpose_vision_area .vision dl dd { display:block; }
+
+	.purpose_vision_area .vision dl:nth-child(1) { border-top:2px solid #007cc3; }
+	.purpose_vision_area .vision dl:nth-child(1) dt { color:#007cc3; }
+	.purpose_vision_area .vision dl:nth-child(2) { margin:0 30px; border-top:2px solid #82aa1b; }
+	.purpose_vision_area .vision dl:nth-child(2) dt { color:#82aa1b; }
+	.purpose_vision_area .vision dl:nth-child(3) { border-top:2px solid #e75717; }
+	.purpose_vision_area .vision dl:nth-child(3) dt { color:#e75717; }
+
+	.purpose_vision_area .value { display:block; }
+	.purpose_vision_area .value span { font-weight:600; }
+	.purpose_vision_area .value .txt1 { color:#007cc3; }
+	.purpose_vision_area .value .txt2 { color:#82aa1b; }
+	.purpose_vision_area .value .txt3 { color:#ff7700; }
+	.purpose_vision_area .value .txt4 { color:#e75717; }
+	.purpose_vision_area .value .txt5 { color:#feb800; }
+	.purpose_vision_area .value .txt6 { color:#3aa8dd; }
+
+/* 복지관소개 : 기관소개 : 기관CI */
+	.agency_ci_area { position:relative; display:block; }
+	.agency_ci_area .mark_area { display:block; margin:20px 0 25px;}
+	.agency_ci_area .mark_area:after { display:block; content:''; clear:both; }
+	.agency_ci_area .mark_area dl { display:block; float:left; width:33.3%; height:67px; padding-left:20px; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; border-right:1px solid #dbdbdb; }
+	.agency_ci_area .mark_area dl dt { font-size:13px; }
+	.agency_ci_area .mark_area dl dt span { display:inline-block; width:20px; height:20px; margin-right:10px; vertical-align:middle; }
+	.agency_ci_area .mark_area dl dd { line-height:24px; margin-top:3px; padding-left:30px; }
+
+	.agency_ci_area .mark_area dl:nth-child(1) dt { color:#007cc3; }
+	.agency_ci_area .mark_area dl:nth-child(1) dt span { background:#007cc3; }
+
+	.agency_ci_area .mark_area dl:nth-child(2) dt { color:#ff7700; }
+	.agency_ci_area .mark_area dl:nth-child(2) dt span { background:#ff7700; }
+
+	.agency_ci_area .mark_area dl:nth-child(3) { border-right:none; }
+	.agency_ci_area .mark_area dl:nth-child(3) dt { color:#3aa8dd; }
+	.agency_ci_area .mark_area dl:nth-child(3) dt span { background:#3aa8dd; }
+
+	.agency_ci_area .common_text { margin:0 0 60px; }
+
+	.agency_ci_area .logo_img { display:block; list-style:none; margin:0; padding:0; }
+	.agency_ci_area .logo_img:after { display:block; content:''; clear:both; }
+	.agency_ci_area .logo_img li { display:block; float:left; margin-left:30px; }
+	.agency_ci_area .logo_img li:first-child { margin-left:0; }
+	.agency_ci_area .reference { line-height:18px; margin:20px 0 0; }
+
+	.agency_ci_area .reference { padding:0 0 60px; }
+	.agency_ci_area .download { right:0; bottom:0; color:#fff; padding-left:54px; background-position:22px top; }
+
+/* 복지관소개 : 기관소개 : 연혁 */
+	.agency_history_area { display:block; }
+	.agency_history_area .agency_history_tabs { display:block; margin:0 0 34px; }
+	.agency_history_area .agency_history_tabs:after { display:block; content:''; clear:both; }
+	.agency_history_area .agency_history_tabs a { display:block; float:left; width:145px; height:46px; line-height:46px; margin-right:6px; font-size:14px; color:#555; text-align:center; border:1px solid #ddd; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; }
+	.agency_history_area .agency_history_tabs a.current { font-weight:600; color:#fff; background:#007cc3; border:1px solid #007cc3; }
+
+	.agency_history_area .agency_history_box ul { margin:0 0 90px; }
+	.agency_history_area .agency_history_box ul li { line-height:24px; margin:0 0 24px; }
+	.agency_history_area .agency_history_box ul li .month { left:170px; }
+	.agency_history_area .agency_history_box ul li .text { margin-left:210px; background-position:left 12px; }
+
+	.agency_history_area .agency_history_box ul:nth-child(1) li .year { color:#007cc3; }
+	.agency_history_area .agency_history_box ul:nth-child(2) li .year { color:#91c901; }
+	.agency_history_area .agency_history_box ul:nth-child(3) li .year { color:#ff7700; }
+	.agency_history_area .agency_history_box ul:nth-child(4) li .year { color:#feb800; }
+	.agency_history_area .agency_history_box ul:nth-child(5) li .year { color:#007cc3; }
+
+	.agency_history_area .agency_history_box1 { background:url('../images/sub1/agency_history_box_bg1.jpg') no-repeat left 3px; }
+	.agency_history_area .agency_history_box2 { background:url('../images/sub1/agency_history_box_bg2.jpg') no-repeat left 3px; }
+	.agency_history_area .agency_history_box3 { background:url('../images/sub1/agency_history_box_bg3.jpg') no-repeat left 3px; }
+
+/* 복지관소개 : 기관소개 : 찾아오시는 길 */
+	.map_area { display:block; }
+	.map_area .map { display:block; }
+	.map_area .map_info { position:relative; display:block; margin-top:22px; }
+	.map_area .map_info p { display:block; margin:0 0 10px; padding-left:21px; background:url('../images/sub1/map_arrow.gif') no-repeat left 50%; }
+	.map_area .map_info p span { display:inline-block; font-size:14px; font-weight:600; color:#ff7700; }
+
+	.map_area .map_btn { position:absolute; display:block; right:0; top:0; }
+	.map_area .map_btn a { display:inline-block; width:58px; height:23px; padding-top:35px; font-size:13px; text-align:center; }
+	.map_area .map_btn a.btn_map { background:url('../images/sub1/btn_map.gif') no-repeat left top; }
+	.map_area .map_btn a.btn_print { margin-left:2px; color:#fff; background:url('../images/sub1/btn_print.gif') no-repeat left top; }
+
+	.map_area .map_detail_info { display:block; margin-top:45px; }
+	.map_area .map_detail_info ul { display:block; list-style:none; margin:0; padding:0; }
+	.map_area .map_detail_info ul:after { display:block; content:''; clear:both; }
+	.map_area .map_detail_info ul li { display:block; float:left; width:50%; }
+	.map_area .map_detail_info ul li dl { display:block; height:59px; margin:0 0 12px; padding-left:68px; }
+	.map_area .map_detail_info ul li dl dt { margin:0 0 8px; padding-top:3px; font-size:20px; font-weight:600; color:#444; }
+	.map_area .map_detail_info ul li:first-child dl dt { padding-top:20px; }
+	.map_area .map_detail_info ul li dl dd { font-size:14px; font-weight:300; color:#999; }
+	.map_area .map_detail_info ul li .text { display:block; line-height:32px; }
+	.map_area .map_detail_info ul li .text .box { display:inline-block; width:48px; height:26px; line-height:26px; margin-right:15px; font-size:13px; font-weight:600; color:#fff; text-align:center; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; }
+	.map_area .map_detail_info ul li .text .box1 { background:#253a95; }
+	.map_area .map_detail_info ul li .text .box2 { background:#2a9dde; }
+	.map_area .map_detail_info ul li .text .indent { display:block; padding-left:170px; }
+
+	.map_area .map_detail_info ul li:first-child dl { background:url('../images/sub1/bus_bg.gif') no-repeat left top; }
+	.map_area .map_detail_info ul li:last-child dl { background:url('../images/sub1/subway_bg.gif') no-repeat left top; }
+	.map_area .map_detail_info ul li:last-child .text { line-height:24px; margin:0 0 5px; }
+
+/* 복지관소개 : 윤리강령 */
+	/*.code_of_ethics { display:block; }
+	.code_of_ethics .text { line-height:30px; margin:0 0 40px; font-size:18px; font-weight:600; color:#444; }
+	.code_of_ethics .text span { color:#ff7700; }
+	.code_of_ethics ul { display:block; list-style:none; margin:0; padding:0; background:url('../images/sub1/code_of_ethics_bg.jpg') no-repeat 50% top; }
+	.code_of_ethics ul li { position:relative; display:block; line-height:24px; margin:0 0 24px; padding-left:35px; font-size:14px; color:#444; }
+	.code_of_ethics ul li span { position:absolute; display:block; left:0; top:0; vertical-align:top; }*/
+	
+/* 복지관소개 : 권익옹호 안내 */
+	.guide_area .h5_label { font-weight:400; }
+	.guide_area .guide_list { display:block; margin:25px 0 0; padding:0; list-style:none; overflow:hidden; }
+	.guide_area .guide_list li { display:block; float:left; width:85px; padding-right:47px; text-align:left; background:url('../images/sub1/icon_arrow.gif') no-repeat 96px 22px; }
+	.guide_area .guide_list li:nth-child(5) .text { width:120px; margin-left:-25px; padding-right:0; }
+	.guide_area .guide_list li:last-child { padding-right:0; background:none; }
+	.guide_area .guide_list li .img { padding:0; }
+	.guide_area .guide_list li .text { display:block; width:85px; line-height:1.7; margin:15px auto 0; font-size:14px; color:#666; text-align:center; letter-spacing:-0.5px; }
+
+/* 복지관소개 : 시설안내 */
+	.facility_information { display:block; height:655px; background:url('../images/sub1/facility_information_bg.jpg') no-repeat right top; }
+	.facility_information dl { display:table; margin:0 0 23px; }
+	.facility_information dl dt { display:table-cell; width:89px; }
+	.facility_information dl dt span { display:block; width:89px; height:39px; line-height:39px; font-size:16px; font-weight:600; color:#fff; text-align:center; background:#ffc201; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; }
+	.facility_information dl dt span.grey_bg { background:#999; }
+	.facility_information dl dd { display:table-cell; line-height:24px; padding-left:30px; }
+	.facility_information .reference { padding-top:5px; }
+
+/* 복지관소개 : 조직현황 : 조직도 */
+	.organization_area { display:block; background:url('../images/sub1/organi_bg.gif') no-repeat left top; }
+	.organization_area .organization { position:relative; display:block; }
+	.organization_area .organization .executives { display:block; }
+	.organization_area .organization .executives dt { display:block; width:195px; height:70px; margin-left:242px; font-size:15px; font-weight:600; text-align:center; background:#fff; border:2px solid #59b7e4; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; }
+	.organization_area .organization .executives dd { display:block; width:195px; padding:7px 0 7px 20px; border:1px solid #dbdbdb; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+	.organization_area .organization .executives dd .blet { display:block; line-height:24px; padding-left:10px; background:url('../images/sub/blet1.gif') no-repeat left 50%; }
+
+	.organization_area .organization .executives1 { padding-top:30px; }
+	.organization_area .organization .executives1 dt { line-height:22px; padding-top:10px; color:#fff; background:#007cc3; border-color:#007cc3; }
+	.organization_area .organization .executives1 dd { position:absolute; left:483px; top:45px; height:40px; }
+	.organization_area .organization .executives2 dt { line-height:70px; margin:60px 0 60px 242px; }
+	.organization_area .organization .executives2 dt a { display:block; color:#59b7e4; }
+	.organization_area .organization .executives2 dd { position:absolute; left:483px; top:179px; }
+	.organization_area .organization .executives3 a { display:block; width:195px; height:70px; line-height:70px; margin-left:242px; font-size:15px; font-weight:600; color:#59b7e4; text-align:center; background:#fff; border:2px solid #59b7e4; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; }
+
+	/* 20180104_이전 
+	.organization_area .organization .team_area { display:block; margin-top:60px; }
+	.organization_area .organization .team_area:after { display:block; content:''; clear:both; }
+	.organization_area .organization .team_area dl { display:block; float:left; overflow:hidden; }
+	.organization_area .organization .team_area dl dt a { display:block; width:193px; height:35px; margin:0 0 58px 2px; padding-top:100px; font-size:15px; color:#444; text-align:center; border:1px solid #dbdbdb; }
+	.organization_area .organization .team_area dl dd { display:block; float:left; }
+	.organization_area .organization .team_area dl dd a { display:block; width:47px; height:85px; line-height:24px; margin-right:3px; font-size:14px; color:#666; font-weight:600; text-align:center;  border:1px solid #dbdbdb; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; }
+
+	.organization_area .organization .team_area dl.team1 { width:197px; }
+	.organization_area .organization .team_area dl.team1 dt a { background:url('../images/sub1/organi_img1.jpg') no-repeat left top; border-top:2px solid #91c901; }
+	.organization_area .organization .team_area dl.team1 dd a { padding-top:18px; background:#e9f4cc; }
+	.organization_area .organization .team_area dl.team2 { width:197px; margin:0 46px 0 42px; }
+	.organization_area .organization .team_area dl.team2 dt a { background:url('../images/sub1/organi_img2.jpg') no-repeat left top; border-top:2px solid #ff7700; }
+	.organization_area .organization .team_area dl.team2 dd a { padding-top:5px; background:#ffe4cc; }
+	.organization_area .organization .team_area dl.team2 dd:nth-last-child(2) a { padding-top:18px; }
+	.organization_area .organization .team_area dl.team3 { width:197px; }
+	.organization_area .organization .team_area dl.team3 dt a { background:url('../images/sub1/organi_img3.jpg') no-repeat left top; border-top:2px solid #feb800; }
+	.organization_area .organization .team_area dl.team3 dd a { margin-right:98px; padding-top:5px; background:#fff1cc; }
+	.organization_area .organization .team_area dl.team4 { width:49px; margin:166px 0 0 22px; }
+	.organization_area .organization .team_area dl.team4 dt a { display:none; }
+	.organization_area .organization .team_area dl.team4 dd a { height:115px; padding:8px 0; background:#fff1cc; }
+	.organization_area .organization .team_area .team4 { display:block; float:left; width:47px; margin:166px 0 0 22px; background:#fff1cc; }
+	.organization_area .organization .team_area .team4 a { display:block; width:47px; height:115px; line-height:24px; margin-right:3px; padding:8px 0; font-size:14px; color:#666; font-weight:600; text-align:center;  border:1px solid #dbdbdb; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; }
+	*/
+
+	.organization_area .organization .team_area { display:block; margin-top:60px; }
+	.organization_area .organization .team_area:after { display:block; content:''; clear:both; }
+	.organization_area .organization .team_area dl { display:block; float:left; overflow:hidden; }
+	.organization_area .organization .team_area dl dt {background:#fff;}
+	.organization_area .organization .team_area dl dt a { display:block; height:51px; margin:0 0 13px; padding-left:70px;font-size:15px; color:#444; text-align:left; border:1px solid #dbdbdb; line-height:51px;}
+	.organization_area .organization .team_area dl dd { display:block; float:left; }
+	.organization_area .organization .team_area dl dd a { display:block; width:55px; min-height:84px;padding-top:17px; margin-right:1px;color:#666; border:1px solid #dbdbdb; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; }
+	.organization_area .organization .team_area dl dd a > span {display:block;margin-bottom:20px;font-size:12px;font-weight:600;text-align:center;}
+	.organization_area .organization .team_area dl dd a  > p {display:none;padding:0 2px;font-size:11px;text-align:left;line-height:24px;letter-spacing:-0.5px;}
+
+	.organization_area .organization .team_area dl.team1 { width:167px; }
+	.organization_area .organization .team_area dl.team1 dt a { background:url('../images/sub1/organi_img1.jpg') no-repeat left top; border-top:2px solid #91c901; }
+	.organization_area .organization .team_area dl.team1 dd a { background:#e9f4cc; }
+	.organization_area .organization .team_area dl.team1 dd.first a > span {line-height:30px;}
+	.organization_area .organization .team_area dl.team2 { width:219px; margin:0 13px 0 5px; }
+	.organization_area .organization .team_area dl.team2 dt {margin:0 22px 0 30px;}
+	.organization_area .organization .team_area dl.team2 dt a { background:url('../images/sub1/organi_img2.jpg') no-repeat left top; border-top:2px solid #ff7700; }
+	.organization_area .organization .team_area dl.team2 dd a { width:54px;background:#ffe4cc; }
+	.organization_area .organization .team_area dl.team3 { width:156px; }
+	.organization_area .organization .team_area dl.team3 dt a {padding-left:45px; background:url('../images/sub1/organi_img3.jpg') no-repeat left top; border-top:2px solid #ff3737; }
+	.organization_area .organization .team_area dl.team3 dd.first {margin-left:20px;}
+	.organization_area .organization .team_area dl.team3 dd a {margin-right:6px; background:#ffe2e2; }
+	.organization_area .organization .team_area dl.team4 { width:156px; margin:0 0 0 34px; }
+	.organization_area .organization .team_area dl.team4 dt a { padding-left:50px;background:url('../images/sub1/organi_img4.jpg') no-repeat left top; border-top:2px solid #feb800; }
+	.organization_area .organization .team_area dl.team4 dd.first {margin-left:20px;}
+	.organization_area .organization .team_area dl.team4 dd a {margin-right:6px; background:#fff1cc; }
+	
+	.organization_area .organization .team_area dl dd:last-child a { margin-right:0; }
+
+	.organization_area .organization .reference { padding:25px 0 60px; }
+
+	.organization_area .organization_detail_page { display:none; }
+
+	.organization_area .organization_detail { display:block; }
+	.organization_area .organization_detail ul { display:block; list-style:none; margin:0; padding:0; }
+	.organization_area .organization_detail ul:after { display:block; content:''; clear:both; }
+	.organization_area .organization_detail ul li { display:table; float:left; width:50%; height:150px; margin:0 0 40px; }
+	.organization_area .organization_detail ul li .picture { display:table-cell; width:100px; vertical-align:middle; }
+	.organization_area .organization_detail ul li .picture img { display:block; width:100%; height:auto; border:1px solid #ddd; }
+	.organization_area .organization_detail ul li .detail { display:table-cell; line-height:24px; padding-left:20px; vertical-align:middle; }
+	.organization_area .organization_detail ul li .detail .name { display:block; padding:0 0 10px; font-size:20px; font-weight:600; }
+
+/* 복지관소개 : 주간식단안내 */
+	.weekly_diet_guide { display:block; }
+	.weekly_diet_guide .diet_btn_area { display:block; margin:0 0 40px; text-align:center; }
+	.weekly_diet_guide .diet_btn_area a { display:inline-block; width:31px; height:31px; line-height:31px; font-size:13px; font-weight:bold; color:#656565; text-align:center; background:#fafafa; border:1px solid #dadada; }
+	.weekly_diet_guide .diet_btn_area .weekly { display:inline-block; font-size:18px; font-weight:600; color:#656565; margin:0 12px; }
+
+	.weekly_diet_guide .diet_area { display:block; margin:0 0 30px; }
+	.weekly_diet_guide .diet_area:after { display:block; content:''; clear:both; }
+	.weekly_diet_guide .diet_area dl { display:block; float:left; width:138px; min-height:467px; margin-left:15px; text-align:center; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; }
+	.weekly_diet_guide .diet_area dl:first-child { margin-left:0; }
+	.weekly_diet_guide .diet_area dl dt { display:block; width:100%; height:100px; line-height:24px; padding-top:27px; font-size:14px; font-weight:600; color:#fff; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; }
+	.weekly_diet_guide .diet_area dl dd { display:block; line-height:31px; font-size:13px; color:#666; border:1px solid #ddd; border-top:none; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+	.weekly_diet_guide .diet_area dl dd.menu { min-height:207px; padding:10px 0; }
+	.weekly_diet_guide .diet_area dl dd.kcal { line-height:24px; padding:14px 0; font-size:14px; font-weight:600; color:#444; background:#fbfbfb; }
+	.weekly_diet_guide .diet_area dl dd.origin { height:114px; padding:10px 0; }
+
+	.weekly_diet_guide .diet_area dl:nth-child(1) dt { background:#007cc3;  }
+	.weekly_diet_guide .diet_area dl:nth-child(2) dt { background:#3aa8dd;  }
+	.weekly_diet_guide .diet_area dl:nth-child(3) dt { background:#91c901;  }
+	.weekly_diet_guide .diet_area dl:nth-child(4) dt { background:#feb800;  }
+	.weekly_diet_guide .diet_area dl:nth-child(5) dt { background:#ff7700;  }
+
+/* 복지관소개 : 무료셔틀 버스 노선도 */
+	.shuttle_bus_area { display:block; }
+	.shuttle_bus_area .bus_intro { display:block; height:137px; line-height:36px; padding-top:30px; font-size:28px; color:#333; background:url('../images/sub1/shuttle_bus_bg.jpg') no-repeat right top; }
+	.shuttle_bus_area .bus_intro span { color:#007cc3; }
+	.shuttle_bus_area .common_table table th { line-height:20px; padding:10px 0px; font-size:13px; }
+	.shuttle_bus_area .common_table table td { font-size:13px; text-align:center; }
+
+/* 사업안내 : 이용안내 : 이용절차 */
+	.use_the_procedure { display:block; }
+	.use_the_procedure .use_program { display:block; padding-top:100px; background:url('../images/sub2/program_bg.jpg') no-repeat left top; }
+	.use_the_procedure .use_program ol { display:block; list-style:none; margin:0; padding:0; }
+	.use_the_procedure .use_program ol:after { display:block; content:''; clear:both; }
+	.use_the_procedure .use_program ol li { display:block; float:left; width:85px; line-height:24px; margin-left:48px; text-align:center; }
+	.use_the_procedure .use_program ol li:first-child { margin-left:0; }
+
+	.use_the_procedure .common_list1 li span { width:125px; }
+	.use_the_procedure .common_list1 li span.week { width:auto; font-weight:300; color:#999; }
+
+	.use_the_procedure .common_list2 li span { width:88px; }
+	.use_the_procedure .common_list2 li:last-child { margin-top:-7px; padding-left:99px; background:none; }
+
+	.use_the_procedure .use_program .reference { margin:20px 0 52px; }
+
+/* 사업안내 : 이용안내 : 기관방문 안내,신청 */
+	.visiting_the_institutions { display:block; }
+	.visiting_the_institutions .common_process { padding-top:120px; background:url('../images/sub2/apply_process_bg.jpg') no-repeat left top;  }
+	.visiting_the_institutions .common_process ol li { width:108px; margin-left:172px; }
+	.visiting_the_institutions .common_process ol li:first-child { margin-left:42px; }
+
+	.visiting_the_institutions .common_list1 { margin:52px 0; }
+	.visiting_the_institutions .common_list li { background-position:left 13px; }
+	.visiting_the_institutions .common_list li span { width:95px; }
+	.visiting_the_institutions .common_list li:first-child span { width:auto; }
+
+	.visiting_the_institutions .common_arrow { margin-top:20px; }
+
+/* 사업안내 : 이용안내 : 대관안내 */
+	.president_information { display:block; }
+	.president_information .img_zone { position:relative; display:block; height:484px; margin:0 0 52px; background:url('../images/sub2/president_information_bg.jpg') no-repeat left top; }
+	.president_information .img_zone .center_txt { position:absolute; display:block; left:254px; top:202px; width:242px; height:242px; line-height:242px; font-size:28px; color:#fff; text-align:center; }
+	.president_information .img_zone .text { position:absolute; display:block; width:196px; height:58px; line-height:24px; padding-top:12px; font-size:13px; color:#fff; text-align:center; }
+	.president_information .img_zone .text1 { left:277px; top:101px; }
+	.president_information .img_zone .text2 { left:60px; bottom:0; }
+	.president_information .img_zone .text3 { right:60px; bottom:0; }
+
+	.president_information .common_list ul li span { width:71px; }
+	.president_information .common_list ul li:last-child span { width:auto; }
+
+	.president_information .common_table td { text-align:center; }
+
+	.president_information .reference { position:relative; }
+	.president_information .download { right:0; top:0; padding-left:36px; background-position:13px top; }
+
+/* 사업안내 : 이용안내 : 실습안내 */
+	.practice_information .common_list { margin:0 0 52px; }
+	.practice_information .common_list ul li span { width:70px; }
+	.practice_information .application_process { display:block; min-height:340px; background:url('../images/sub2/application_process_bg.jpg') no-repeat left top; }
+	.practice_information .application_process ol { display:block; list-style:none; margin:0; padding:0; }
+	.practice_information .application_process ol:after { display:block; content:''; clear:both; }
+	.practice_information .application_process ol li { display:block; float:left; line-height:24px; min-width:196px; margin:0 81px 55px 0; padding-top:125px; text-align:center; }
+	.practice_information .application_process ol li:nth-child(2) { margin-right:73px; }
+	.practice_information .application_process ol li:nth-child(3n) { margin-right:0; }
+
+/* 사업안내 : 사업별안내 : 공통  */
+	.business_information { display:block; }
+	.business_information .business_title { display:block; margin:0 0 60px; }
+	.business_information .common_table { display:block; margin:0 0 50px; }
+	.business_information .common_table td { padding:10px 10px; text-align:center; letter-spacing:-0.4px; }
+	.business_information .common_table td:last-child { text-align:left; }
+	.business_information .common_table td .indent1 { padding-left:15px; background:url('../images/common/site_bar.gif') no-repeat 5px 12px; }
+
+/* 사업안내 : 사업별안내 : 수중운동팀  */
+	.business_information4 .common_process { margin:0 0 20px; padding:121px 0 30px; border-bottom:1px dashed #e0e0e0; }
+	.business_information4 .common_process ol li:last-child { margin-right:0; }
+
+	.business_information4 .common_process1 { background:url('../images/sub2/business_information4_bg1.jpg') no-repeat left top; }
+	.business_information4 .common_process1 ol li { width:106px; margin-right:55px; }
+	.business_information4 .common_process1 ol li:nth-child(3) { width:auto; min-width:106px; margin-right:37px; }
+
+	.business_information4 .common_process2 { background:url('../images/sub2/business_information4_bg2.jpg') no-repeat left top; }
+	.business_information4 .common_process2 ol li { min-width:106px; margin-right:95px; }
+	.business_information4 .common_process2 ol li:first-child { margin-right:70px; }
+
+/* 사업안내 : 사업별안내 : 상담가족지원팀 */
+	.business_information6 .step_area { display:block; }
+	.business_information6 .step_area:after { display:block; content:''; clear:both; }
+	.business_information6 .step_area dl { display:block; float:left; width:360px; height:174px; margin-bottom:20px; overflow:hidden; }
+	.business_information6 .step_area dl:nth-child(2n) { margin-left:30px; }
+	.business_information6 .step_area dl dt { display:block; height:32px; line-height:32px; padding-left:10px; font-size:13px; color:#fff; }
+	.business_information6 .step_area dl dd { display:block; height:140px; padding-left:10px; border:1px solid #dbdbdb; }
+	.business_information6 .step_area dl dd span { display:block; font-size:13px; font-weight:600; }
+	.business_information6 .step_area dl dd p { line-height:24px; margin:0 0 5px; }
+	.business_information6 .step_area dl dd .indent { margin:-5px 0 0; padding-left:10px; }
+
+	.business_information6 .step_area dl.color1 dt { background:#007cc3; }
+	.business_information6 .step_area dl.color1 dd span { padding:45px 0 10px; color:#007cc3; }
+	.business_information6 .step_area dl.color2 dt { background:#007cc3; }
+	.business_information6 .step_area dl.color2 dd span { padding:20px 0 10px; color:#007cc3; }
+	.business_information6 .step_area dl.color3 dt { background:#82aa1b; }
+	.business_information6 .step_area dl.color3 dd span { padding:20px 0 10px; color:#82aa1b; }
+	.business_information6 .step_area dl.color4 dt { background:#82aa1b; }
+	.business_information6 .step_area dl.color4 dd span { padding:20px 0 10px; color:#82aa1b; }
+	.business_information6 .step_area dl.color5 dt { background:#ff7700; }
+	.business_information6 .step_area dl.color5 dd span { padding:30px 0 10px; color:#ff7700; }
+	.business_information6 .step_area dl.color6 dt { background:#ff7700; }
+	.business_information6 .step_area dl.color6 dd span { padding:30px 0 10px; color:#ff7700; }
+
+/* 사업안내 : 사업별안내 : 단기보호센터 */
+	.business_information11 .common_list  { margin:0 0 30px; }
+
+/* 사업안내 : 사업별안내 : 사회서비스센터(활동지원) */
+	.business_information12 .common_list ul li span { min-width:74px; }
+
+	.business_information12 .step_area { display:block; }
+	.business_information12 .step_area:after { display:block; content:''; clear:both; }
+	.business_information12 .step_area dl { display:block; float:left; width:164px; height:134px; margin:20px 31px 0px 0; overflow:hidden; }
+	.business_information12 .step_area dl dt { display:block; height:32px; line-height:32px; padding-left:12px; font-size:13px; color:#fff; }
+	.business_information12 .step_area dl dd { display:block;  height:100px; padding-left:12px; border:1px solid #dcdcdc; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; }
+	.business_information12 .step_area dl dd p { display:block; line-height:20px; padding:0 0 8px; font-size:13px; }
+	.business_information12 .step_area dl:last-child { margin-right:0; }
+
+	.business_information12 .step_area1 dl dt { background:#007cc3; }
+	.business_information12 .step_area1 dl dd { padding-top:18px; }
+	.business_information12 .step_area1 dl:nth-child(3) dd { padding-top:8px; }
+	.business_information12 .step_area1 dl dd p { color:#007cc3; }
+
+	.business_information12 .step_area2 { margin:0 0 52px; }
+	.business_information12 .step_area2 dl dt { background:#82aa1b; }
+	.business_information12 .step_area2 dl dd { padding-top:8px; }
+	.business_information12 .step_area2 dl:nth-child(2) dd { padding-top:18px; }
+	.business_information12 .step_area2 dl dd p { color:#82aa1b; }
+
+/* 사업안내 : 대기자 현황 */
+	.waiting_status { display:block; }
+	.waiting_status .waiting_top { display:block; height:167px; line-height:36px; margin:0 0 30px; padding:30px 0 0 50px; font-size:28px; color:#333; background:url('../images/sub2/waiting_top_bg.jpg') no-repeat left top; }
+	.waiting_status .waiting_top p { color:#007cc3; }
+	.waiting_status .common_table { margin-top:60px; border-top:1px solid #d6d6d6; }
+	.waiting_status .common_table table th { padding-left:22px; text-align:left; border-left:none; }
+	.waiting_status .common_table table td { padding-left:10px; border-right:none; }
+	.waiting_status .common_table table td input[type=text] { display:inline-block; width:175px; height:28px; padding:0 10px; border:1px solid #dbdbdb; }
+	.waiting_status .common_table table td select { display:inline-block; height:28px; font-size:14px; color:#333; border:1px solid #dbdbdb; }
+	.waiting_status .common_table table td select#year { width:100px; }
+	.waiting_status .common_table table td select#month { width:74px; }
+	.waiting_status .common_table table td select#day { width:74px; }
+	.waiting_status .wating_search { display:block; text-align:center; }
+	.waiting_status .wating_search input[type=submit] { display:inline-block; width:80px; height:32px; font-size:13px; font-weight:600; color:#fff; background:#007cc3; border:none; border-radius:4px; cursor:pointer; }
+
+/* 나눔 안내 : 후원안내 및 신청 */
+	.sponsorship_application { display:block; }
+	.sponsorship_application .sponsorship_application_top { display:block; height:393px; margin:0 0 60px; background:url('../images/sub3/sponsorship_application_bg.jpg') no-repeat left top; }
+	.sponsorship_application .sponsorship_application_top .text1 { line-height:36px; padding-top:30px; font-size:28px; color:#333; }
+	.sponsorship_application .sponsorship_application_top .text1 span { color:#007cc3; }
+	.sponsorship_application .sponsorship_application_top ul { display:block; list-style:none; margin:50px 0 0 0; padding:0; }
+	.sponsorship_application .sponsorship_application_top ul:after { display:block; content:''; clear:both; }
+	.sponsorship_application .sponsorship_application_top ul li { display:block; float:left; width:50%; height:106px; line-height:24px; margin:0 0 30px; padding:30px 0 0 127px; font-size:14px; color:#666; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; }
+
+	.sponsorship_application .common_list1 ol li { margin:0 0 20px; }
+	.sponsorship_application .common_list1 ol li .btn_haapybin { display:block; width:143px; height:32px; line-height:32px; margin-top:3px; font-size:14px; color:#fff; text-align:center; background:#82aa1b; border-radius:4px; }
+	.sponsorship_application .common_list1 ol li p { line-height:23px; margin-top:3px; }
+
+	.volunteer_guide { display:block; }
+	.volunteer_guide .volunteer_img { display:block; margin:30px 0 60px; }
+
+/* 나눔 안내 : 후원처 */
+	.destination_area { display:block; border-top:2px solid #007cc3; }
+	.destination_area ul { display:block; list-style:none; margin:0; padding:0; }
+	.destination_area ul li { display:table; width:100%; padding:20px 0; border-bottom:1px solid #d6d6d6; }
+	.destination_area ul li:after { display:block; content:''; clear:both; }
+	.destination_area ul li .img_zone { display:table-cell; width:300px; }
+	.destination_area ul li .text_zone { display:table-cell; vertical-align:middle; }
+	.destination_area ul li .text_zone .blet { line-height:30px; margin-left:10px; padding-left:10px; font-size:14px; color:#666; background:url('../images/sub/blet2.gif') no-repeat left 14px; }
+	.destination_area ul li .text_zone .blet span { display:inline-block; width:90px; font-size:14px; font-weight:600; color:#444; }
+	.destination_area ul li .text_zone .blet:first-child { font-size:20px; font-weight:600; color:#007cc3; }
+	.destination_area ul li .text_zone .indent { padding-left:113px; margin:0 0 7px; }
+
+
+/* 수리장애인 보호작업장 : 보호작업장 소개 */
+	.sheltered_workshop_intro { display:block; }
+	.sheltered_workshop_intro .text1 { display:block; line-height:24px; margin:0 0 50px; font-size:14px; color:#666; }
+	.sheltered_workshop_intro .workshop_mission { display:block; height:210px; margin:0 0 50px; padding:40px 0 0 25px; font-size:30px; color:#666; background:url('../images/sub7/workshop_mission_bg.jpg') no-repeat left top; }
+	.sheltered_workshop_intro .workshop_mission .txt1 { font-weight:600; color:#007cc3; }
+	.sheltered_workshop_intro .workshop_mission .txt2 { font-weight:600; color:#e75717; }
+
+	.sheltered_workshop_intro .workshop_vision { display:block; margin:0 0 20px; }
+	.sheltered_workshop_intro .workshop_vision ul { display:block; list-style:none; margin:0; padding:0; }
+	.sheltered_workshop_intro .workshop_vision ul:after { display:block; content:''; clear:both; }
+	.sheltered_workshop_intro .workshop_vision ul li { display:block; float:left; width:50%; height:70px; line-height:24px; margin:0 0 40px; padding:12px 0 0 107px; font-size:14px; color:#666; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; }
+	.sheltered_workshop_intro .workshop_vision ul li:nth-child(2n) { padding:20px 0 0 123px; border-left:1px solid #dbdbdb; }
+
+	.sheltered_workshop_intro .workshop_vision ul li:nth-child(1) { padding-top:20px; background:url('../images/sub7/workshop_vision_img1.jpg') no-repeat left top; }
+	.sheltered_workshop_intro .workshop_vision ul li:nth-child(2) { background:url('../images/sub7/workshop_vision_img2.jpg') no-repeat left top; }
+	.sheltered_workshop_intro .workshop_vision ul li:nth-child(3) { background:url('../images/sub7/workshop_vision_img3.jpg') no-repeat left top; }
+	.sheltered_workshop_intro .workshop_vision ul li:nth-child(4) { background:url('../images/sub7/workshop_vision_img4.jpg') no-repeat left top; }
+	.sheltered_workshop_intro .workshop_vision ul li:nth-child(5) { background:url('../images/sub7/workshop_vision_img5.jpg') no-repeat left top; }
+
+	.sheltered_workshop_intro .facilities_overview { display:block; padding:5px 0; background:url('../images/sub7/facilities_overview_bg.jpg') no-repeat right top; border-top:2px solid #007cc3; border-bottom:1px solid #d6d6d6; }
+	.sheltered_workshop_intro .facilities_overview .common_list ul li span { width:70px; }
+
+	.workshop_basic_staus { display:block; }
+	.workshop_basic_staus .common_list { margin:0 0 50px; }
+	.workshop_basic_staus .common_list ul li { line-height:24px; margin:0 0 7px; background-position:left 10px; }
+
+	.workshop_basic_staus .common_table table td { padding:10px; font-size:14px; color:#444; text-align:center; }
+	.workshop_basic_staus .common_table table td .blet1 { margin:0 0 5px; padding-left:23px; background:url('../images/sub/blet.gif') no-repeat 13px 10px; } 
+
+	.workshop_basic_staus .history { margin:0 0 60px; }
+	.workshop_basic_staus .history .box2 { height:9px; }
+	.workshop_basic_staus .history ul li .indent { display:inline-block; margin-top:-7px; padding-left:234px; }

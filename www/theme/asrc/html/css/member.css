@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+/* 회원가입 : 일반 : 시작 */
+	#regist { position:relative; display:block; width:100%; overflow:hidden; }
+
+/* 회원가입 : 회원가입약관 동의 : 시작 */
+	#regist .register_top_process { display:block; width:100%; margin-bottom:50px; overflow:hidden; }
+	#regist .register_top_process ul { display:block; list-style:none; margin:0; padding:0; }
+	#regist .register_top_process ul:after { display:block; content:''; clear:both; }
+	#regist .register_top_process ul li { display:block; float:left; width:33%; height:52px; line-height:52px; margin-left:0.5%; font-size:16px; color:#454545; text-align:center; background:#dbdbdb; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; }
+	#regist .register_top_process ul li:first-child { margin-left:0; }
+	#regist .register_top_process ul li span { display:inline-block; margin-right:10px; padding: 0 0 4px; font-size:13px; color:#676767; vertical-align:middle; }
+	#regist .register_top_process ul li.current { font-weight:bold; color:#fff; background:#3f3f3f; }
+	#regist .register_top_process ul li.current span { color:#c2c2c2; }
+
+	#regist .agree_box { display:block; margin-bottom:30px; }
+	#regist .agree_box h5 { display:block; margin-bottom:10px; font-size:15px; color:#77784c; font-weight:bold; }
+	#regist .agree_box textarea {
+		width:100%; height:250px; padding:10px; font-family:'Nanum Gothic', serif; font-size:12px; color:#555; line-height:1.5; border:1px solid #e4e4e4; resize:none;
+		box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;
+	}
+	#regist .agree_box .chk { display:block; padding:10px 0; text-align:right; }
+	#regist .agree_box .chk input[type=radio] { margin-left:20px; vertical-align:middle; }
+	#regist .agree_box .chk label { display:inline-block; *display:inline; zoom:1; margin-left:2px; vertical-align:middle; }
+
+	#regist .btn_area { display:block; text-align:center; }
+	#regist .btn_area input[type=submit] { display:inline-block; *display:inline; zoom:1; width:120px; height:40px; cursor:pointer; border:1px solid #ccc; vertical-align:middle; }
+
+/* 회원가입 : 회원정보입력 : 시작 */
+	#regist .table_layout { display:block; background:#fefefe; border-top:2px solid #333; overflow:hidden; }
+	#regist .star { display:inline-block; *display:inline; zoom:1; color:#c30202; vertical-align:middle; }
+	#regist .regist_table { width:100%; border-collapse:collapse; border-spacing:0; }
+	#regist .regist_table th, #regist .regist_table td { padding:10px 10px; border-bottom:1px solid #d5d5d5; }
+	#regist .regist_table th { padding-left:20px; text-align:left; background:#f4f4f4; }
+	#regist .regist_table td input[type=text] { height:24px; line-height:24px; text-indent:4px; border:1px solid #ccc; vertical-align:middle; }
+	#regist .regist_table td input[type=password] { height:24px; line-height:24px; text-indent:4px; border:1px solid #ccc; vertical-align:middle; }
+	#regist .regist_table td select { height:26px; border:1px solid #ccc; vertical-align:middle; }
+
+/* 회원가입 : 가입완료 : 시작 */
+	#regist .c_result { position:relative; display:block; line-height:1.5; margin-bottom:30px; padding:20px; background:#efefef; border:1px solid #ccc; }
+
+/* 로그인 : 기본 */
+	#login_box { display:block; width:100%; overflow:hidden; }
+	#login_box .ment { margin-bottom:10px; font-family:'나눔 고딕','Nanum Gothic'; font-size:18px; color:#333; font-weight:bold; }
+	#login_box .ment2 { font-weight:normal; }
+	#login_box .login_outline { position:relative; display:block; height:240px; background:#fff url('/index/images/login_bg.jpg') no-repeat left top; border:1px solid #dedede; overflow:hidden; }
+	#login_box .login_outline .login_input { position:absolute; display:block; list-style:none; left:20%; top:50px; width:432px; margin:0; padding:0 0 14px; border-bottom:1px dashed #ebebeb; }
+	#login_box .login_outline .login_input li { display:block; margin-bottom:5px; }
+	#login_box .login_outline .login_input li label { display:inline-block; *display:inline; zoom:1; width:70px; font-family:'나눔 고딕','Nanum Gothic'; font-size:14px; color:#444; }
+	#login_box .login_outline .login_input li input[type=text] { width:258px; height:28px; text-indent:4px; border:1px solid #ccc; }
+	#login_box .login_outline .login_input li input[type=password] { width:258px; height:28px; text-indent:4px; border:1px solid #ccc; }
+	#login_box .login_outline .btn_login { position:absolute; display:block; right:23%; top:50px; width:85px; height:65px; line-height:65px; font-family:'나눔 고딕','Nanum Gothic'; font-size:14px; color:#fff; font-weight:bold; background:#000; border:0; cursor:pointer; }
+
+	#login_box .secession_outline { position:relative; display:block; height:281px; background:#fff url('/index/images/secession_bg.jpg') no-repeat left top; border:1px solid #dedede; overflow:hidden; }
+	#login_box .secession_outline .infor { position:absolute; display:block; list-style:none; left:342px; top:50px; width:392px; margin:0; padding:10px 20px; background:#f4f4f4; }
+	#login_box .secession_outline .infor li { display:block; margin:2px 0; padding-left:16px; background:url('/index/images/icon_point.gif') no-repeat left 4px; }
+	#login_box .secession_outline .secession_input { position:absolute; display:block; list-style:none; left:342px; top:160px; width:432px; margin:0; padding:0 0 14px; border-bottom:1px dashed #ebebeb; }
+	#login_box .secession_outline .secession_input li { display:block; margin-bottom:5px; }
+	#login_box .secession_outline .secession_input li label { display:inline-block; *display:inline; zoom:1; width:70px; font-family:'나눔 고딕','Nanum Gothic'; font-size:14px; color:#444; }
+	#login_box .secession_outline .secession_input li input[type=text] { width:258px; height:28px; text-indent:4px; border:1px solid #ccc; }
+	#login_box .secession_outline .secession_input li input[type=password] { width:258px; height:28px; text-indent:4px; border:1px solid #ccc; }
+	#login_box .secession_outline .btn_login { position:absolute; display:block; right:58px; top:160px; width:85px; height:65px; line-height:65px; font-family:'나눔 고딕','Nanum Gothic'; font-size:14px; color:#fff; font-weight:bold; background:#0d55a9; border:0; cursor:pointer; }
+
+	#login_box .secession_result { position:relative; display:block; text-align:center; overflow:hidden; }
+
+	#login_box .login_outline .member_btn { position:absolute; display:block; left:20%; top:150px; }
+
+/* 아이디/패스워드 찾기 */
+	#find { display:block; width:100%; overflow:hidden; }
+	#find .ment { margin-bottom:30px; font-family:'나눔 고딕','Nanum Gothic',Tahoma, sans-serif; font-size:18px; color:#444; font-weight:normal; }
+	#find .find_cnt { position:relative; display:block; border:1px solid #dedede; overflow:hidden; }
+
+	#find .find_cnt .infor { display:block; list-style:none; margin:0; padding:10px 20px; background:#f4f4f4; }
+	#find .find_cnt .infor li { display:block; margin:5px 0; padding-left:16px; background:url('/index/images/icon_point.gif') no-repeat left 4px; }
+
+	#find .find_cnt .input_data { display:block; list-style:none; margin:0; padding:30px 30px; }
+	#find .find_cnt .input_data li { display:block; margin-bottom:10px; }
+	#find .find_cnt .input_data li label { display:inline-block; *display:inline; zoom:1; width:100px; font-family:'나눔 고딕','Nanum Gothic',Tahoma,sans-serif; vertical-align:middle; }
+	#find .find_cnt .input_data li input[type=text] { width:100px; height:24px; text-indent:4px; border:1px solid #ccc; vertical-align:middle; }
+	#find .find_cnt .input_data li select { height:26px; border:1px solid #ccc; vertical-align:middle; }
+
+	#find .find_cnt .btn { }

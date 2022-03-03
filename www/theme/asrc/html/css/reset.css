@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+/* 문서의 베이스 스타일시트 정의 */
+	html, body { width:100%; height:100%;font-family:'Nanum Gothic','나눔고딕','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim; font-size:14px; font-weight:300; color:#666; }
+	html { overflow-y:auto; }
+
+/* 기본태그의 스타일시트 정의 */
+	body, div, p, span, strong, label, table, thead, tbody, tfoot, th, td, caption, input, form, fieldset, select, textarea, button, dl, dt, dd, a, hr { margin:0; padding:0; }
+	fieldset { border:none; }
+	ol, ul, li { }
+
+	span, strong, label { vertical-align:baseline; }
+	input, select, button { font-family:'Nanum Gothic','나눔고딕','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, Arial, Helvetica, Tahoma; vertical-align:middle; }
+	address { font-style:normal; }
+
+/* 헤드태그의 스타일시트 정의 */
+	h1, h2, h3, h4, h5, h6 { margin:0; padding:0; }
+
+/* 링크태그의 스타일시트 정의 */
+	a { color:#666; text-decoration:none; }
+	a:visited { color:#666; text-decoration:none; }
+	a:hover { color:#333; text-decoration:none; }
+	a:active { color:#333; }
+
+/* 기타태그의 스타일시트 정의 */
+	hr { display:none; }
+	caption { height:0; font-size:0; line-height:0; }
+	img { vertical-align:middle; border:none; }
+
+/* 게시판의 글보기 부분에 대한 스타일시트를 정의하며, 이 스타일시트는 사용자 및 관리자모드에 동시에 적용됨으로 수정하지 않는다. */
+	.read_area { }
+	.read_area ol, .read_area ul { list-style:default; margin:0; padding:0 0 0 42px; }
+	.read_area li { }
+
+
+
+/* 이 부분은 수정을 하지 않습니다. *********************************************************************************************************************************************************************************************/
+
+/* 캡챠 자동등록(입력)방지 기본 */
+	#captcha { position:relative; display:inline-block; }
+	#captcha legend { position:absolute; margin:0; padding:0; font-size:0; line-height:0; text-indent:-9999em; overflow:hidden; }
+	#captcha #captcha_img { width:100px; height:41px; border:1px solid #e9e9e9; }
+	#captcha #captcha_mp3 { position:absolute; left:101px; top:0; width:23px; height:22px; margin:0; padding:0; border:0; background:transparent; vertical-align:middle; overflow:hidden; cursor:pointer; }
+	#captcha #captcha_mp3 span { position:absolute; width:23px; height:22px; left:0; top:0; background:url('../plugin/kcaptcha/img/sound.gif'); }
+	#captcha #captcha_reload { position:absolute; left:101px; top:21px; width:23px; height:22px; margin:0; padding:0; border:0; background:transparent; vertical-align:middle; overflow:hidden; cursor:pointer; }
+	#captcha #captcha_reload span { position:absolute; left:0; top:0; width:23px; height:22px; background:url('../plugin/kcaptcha/img/reload.gif'); }
+	#captcha #captcha_key { width:70px; height:41px; margin:0 0 0 25px; padding:0 5px; font-size:1.333em; font-weight:bold; text-align:center; line-height:2.8em; border:1px solid #b8c9c2; background:#f7f7f7; vertical-align:top; }
+	#captcha #captcha_info { display:block; margin:5px 0 0; font-size:0.95em; letter-spacing:-0.1em; }
+
+/* 팝업관리 : 팝업창 스타일시트 */
+	.win_pop { position:relative; display:block; background:#fff; overflow:hidden; }
+	.win_pop .pop_cnt { position:relative; display:block; overflow:hidden; }
+	.win_pop .pop_cnt img { vertical-align:top; }
+	.win_pop .pop_foot { position:relative; display:block; background:#333; overflow:hidden; }
+	.win_pop .pop_foot:after { display:block; content:""; clear:both; }
+	.win_pop .pop_foot .pop_foot_left { position:relative; display:block; float:left; width:70%; height:30px; line-height:30px; }
+	.win_pop .pop_foot .pop_foot_right { position:relative; display:block; float:right; width:25%; height:30px; line-height:30px; }
+	.win_pop .pop_foot .pop_foot_left input[type=checkbox] { margin-left:3px; vertical-align:middle; }
+	.win_pop .pop_foot .pop_foot_left label { display:inline-block; *display:inline; zoom:1; color:#eee; letter-spacing:-0.01em; vertical-align:middle; }
+	.win_pop .pop_foot .pop_foot_right img { position:absolute; right:3px; top:50%; margin-top:-5px; vertical-align:middle; }
+
+/* 팝업관리 : 레이어팝업 스타일시트 */
+	.pop_layer { position:relative; display:block; overflow:hidden; background:#fff; border:1px solid #ccc; z-index:10000000000000000000000000; }
+	.pop_layer .pop_cnt { position:relative; display:block; overflow:hidden; }
+	.pop_layer .pop_cnt img { vertical-align:top; }
+	.pop_layer .pop_foot { position:relative; display:block; background:#333; overflow:hidden; }
+	.pop_layer .pop_foot:after { display:block; content:""; clear:both; }
+	.pop_layer .pop_foot .pop_foot_left { position:relative; display:block; float:left; width:70%; height:30px; line-height:30px; }
+	.pop_layer .pop_foot .pop_foot_right { position:relative; display:block; float:right; width:25%; height:30px; line-height:30px; }
+	.pop_layer .pop_foot .pop_foot_left input[type=checkbox] { margin-left:3px; vertical-align:middle; }
+	.pop_layer .pop_foot .pop_foot_left label { display:inline-block; *display:inline; zoom:1; color:#eee; letter-spacing:-0.01em; vertical-align:middle; }
+	.pop_layer .pop_foot .pop_foot_right img { position:absolute; right:3px; top:50%; margin-top:-5px; vertical-align:middle; }
+
+
+.img { padding-left:3px; }
+.nanum { font-family:'Nanum Gothic'; font-size:30px; font-weight:400; }
+.nato { font-family:'Noto Sans KR'; font-size:30px; font-weight:400; letter-spacing:-0.06em; }

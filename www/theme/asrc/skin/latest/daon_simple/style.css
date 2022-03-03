@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* 새글 스킨 (simple) */
+
+.simple_lat {position:relative;margin-bottom:20px;overflow:hidden;border: 0px solid #c6cacc;}
+.simple_lat .lat_title {display:block;padding:0 20px;line-height:45px;font-size:1.083em;border-bottom:1px solid #e2e2e2;color:#253dbe;background:#fcfcfc}
+.simple_lat .lat_title a{color:#253dbe;display:inline-block;position:relative}
+.simple_lat .lat_title a:after{position:absolute;bottom:-1px;left:0;width:100%;height:2px;background:#253dbe;content:''}
+.simple_lat ul{padding:15px 20px}
+.simple_lat li {position:relative;line-height:18px;padding:3px 0;padding-right:50px;padding-left:10px;position:relative; list-style:none;}
+/*.simple_lat li:before{position: absolute;top: 12px;left: 0px;width: 4px;height: 4px;background: #aaa;content: '';border-radius: 50%;}*/
+.simple_lat li a:hover{color:#a22121}
+.simple_lat li .fa-heart{color:#C42828;}
+.simple_lat li .fa-lock{display: inline-block;line-height: 14px;width: 16px;font-size: 0.833em;color: #666;background: none;text-align: center;border-radius: 2px;font-size: 12px;border:0px solid #a2c6ce}
+.simple_lat li .new_icon{display:inline-block;width: 14px;line-height:15px;font-size:0.7em;color:#fff;background:#3071CA;text-align:center;border-radius: 2px;}
+.simple_lat li .hot_icon{display:inline-block;width: 16px;line-height:16px ;font-size:0.833em;color:#fff;background:none;text-align:center;border-radius: 2px;}
+.simple_lat li .fa-download {display:inline-block;width:16px;line-height:16px;font-size:0.833em;color:#F19717;background:none;text-align:center;border-radius:2px;vertical-align:middle}
+.simple_lat li .fa-caret-right{color:#bbb}
+.simple_lat .lt_date{position:absolute;top:3px;right:0;color:#888}
+.simple_lat  .empty_li{line-height:145px ;color:#666;text-align:center;padding:0;}
+.simple_lat  .empty_li:before{background:none;padding:0}
+
+.simple_lat .lt_cmt{background:#fff;color:#000; border:1px solid #ddd; font-size:11px;height:16px;line-height:16px;padding:0 5px;border-radius:3px;vertical-align:middle}
+.simple_lat .lt_more {position:absolute;top:11px;right:10px;display:block;width:25px;line-height:25px;color:#aaa;border-radius:3px;text-align:center;}
+.simple_lat .lt_more:hover{color:#777}

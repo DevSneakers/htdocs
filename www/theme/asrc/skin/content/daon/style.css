@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+/* 내용관리 */
+#ctt {margin:20px 0;padding:0px;background:#fff; border:0px solid red;}
+.ctt_admin {text-align:right}
+.ctt_admin a.btn{display:inline-block;text-decoration:none;vertical-align:middle;border:0;background:transparent; font-size:0.9em; border:1px solid #ddd; border-radius:3px;} /* daontheme */
+.ctt_admin a.btn:hover{color:#000; background-color:#000; color:#fff; border:1px solid #000;}
+#ctt header h1 {position:absolute;font-size:0;line-height:0;overflow:hidden}
+#ctt_con {padding:10px 0;line-height:1.6em}
+#ctt_con img{max-width:100%;height:auto}
+.ctt_img {text-align:center}
+

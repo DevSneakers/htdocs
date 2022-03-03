@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title></title>
+      <meta charset="utf-8">
+  </head>
+  <body>
+    <input type="number" id="a">
+    <input type="number" id="b">
+    <button onclick="add()">더해줘!</button>
+    <p id="result"></p>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script>
+        function add() {
+            $.ajax({
+                url: "myname.php",
+                type: "get",
+                data: {
+                    a: $('#a').val(),
+                    b: $('#b').val(),
+                }
+            }).done(function(data) {
+                $('#result').text(data);
+            });
+        }
+    </script>
+  </body>

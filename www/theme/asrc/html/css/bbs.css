@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+/* 화면 상단 : Select Box, 게시글 갯수 : 시작 */
+	.board_status { position:relative; margin-bottom:10px; padding:0; overflow:hidden; }
+	.board_status:after { display:block; content:""; clear:both; }
+	.board_status .fl { display:block; float:left; }
+	.board_status .fr { display:block; float:right; }
+
+	.board_status select { display:inline-block; height:20px; vertical-align:middle; }
+	.board_status .bbs_gnb { display:block; }
+	.board_status .bbs_gnb ul { display:block; overflow:hidden; }
+	.board_status .bbs_gnb ul:after { display:block; content:""; clear:both; }
+	.board_status .bbs_gnb ul li { float:left; margin-right:2px; }
+	.board_status .bbs_gnb ul li a { display:block; padding:5px 10px; font-size:13px; color:#676767; border:1px solid #ccc; border-bottom:none; }
+	.board_status .bbs_gnb ul li.current a { color:#fff; font-weight:bold; background:#7eb7ec; border:1px solid #7eb7ec; border-bottom:none; }
+	.board_status .bbs_gnb ul li.end { background:none;}
+	.board_status .obj { display:inline-block; margin-top:10px; padding-left:15px; vertical-align:middle; background:url('./img/icon_point.gif') no-repeat left 50%; }
+	.board_status .obj strong { display:inline-block; vertical-align:middle; }
+	.board_status a { display:inline-block; height:20px; line-height:20px; margin-left:10px; vertical-align:middle; }
+
+/* 버튼 : 기본 정의 : 시작 */
+	.btn_normal {
+		display:inline-block; height:32px; line-height:28px; margin:0 1px; padding-left:15px; padding-right:15px; font-family:'Nanum Gothic', serif; font-size:13px; color:#666; font-weight:bold; text-align:center; vertical-align:middle; cursor:pointer;
+		box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;
+		border:1px solid #c4c4c4; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px;
+		background: #fff; /* Old browsers */
+		background: -moz-linear-gradient(top,  #ffffff 0%, #fdfdfd 28%, #e7e7e7 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(28%,#fdfdfd), color-stop(100%,#e7e7e7)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #ffffff 0%,#fdfdfd 28%,#e7e7e7 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #ffffff 0%,#fdfdfd 28%,#e7e7e7 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #ffffff 0%,#fdfdfd 28%,#e7e7e7 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #ffffff 0%,#fdfdfd 28%,#e7e7e7 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e7e7e7',GradientType=0 ); /* IE6-9 */
+	}
+	.btn_normal[type=submit] {
+		display:inline-block; height:32px; line-height:28px; margin:0 1px; padding-left:15px; padding-right:15px; font-family:'Nanum Gothic', serif; font-size:13px; color:#666; font-weight:bold; text-align:center; vertical-align:middle; cursor:pointer;
+		box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;
+		border:1px solid #c4c4c4; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px;
+		background: #fff; /* Old browsers */
+		background: -moz-linear-gradient(top,  #ffffff 0%, #fdfdfd 28%, #e7e7e7 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(28%,#fdfdfd), color-stop(100%,#e7e7e7)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #ffffff 0%,#fdfdfd 28%,#e7e7e7 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #ffffff 0%,#fdfdfd 28%,#e7e7e7 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #ffffff 0%,#fdfdfd 28%,#e7e7e7 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #ffffff 0%,#fdfdfd 28%,#e7e7e7 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e7e7e7',GradientType=0 ); /* IE6-9 */
+	}
+	.btn_action {
+			display:inline-block; height:32px; line-height:28px; margin:0 1px; padding-left:15px; padding-right:15px; font-family:'Nanum Gothic', serif; font-size:13px; color:#fff !important; font-weight:bold; text-align:center; vertical-align:middle; cursor:pointer;
+			box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;
+			border:1px solid #ae1d00; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px;
+			background: #fc4100; /* Old browsers */
+			background: -moz-linear-gradient(top,  #fc4100 0%, #d43700 28%, #ae1d00 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fc4100), color-stop(28%,#d43700), color-stop(100%,#ae1d00)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #fc4100 0%,#d43700 28%,#ae1d00 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #fc4100 0%,#d43700 28%,#ae1d00 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #fc4100 0%,#d43700 28%,#ae1d00 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #fc4100 0%,#d43700 28%,#ae1d00 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc4100', endColorstr='#ae1d00',GradientType=0 ); /* IE6-9 */
+		}
+		.btn_action[type=submit] {
+			display:inline-block; height:32px; line-height:28px; margin:0 1px; padding-left:15px; padding-right:15px; font-family:'Nanum Gothic', serif; font-size:13px; color:#fff; font-weight:bold; text-align:center; vertical-align:middle; cursor:pointer;
+			box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;
+			border:1px solid #ae1d00; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px;
+			background: #fc4100; /* Old browsers */
+			background: -moz-linear-gradient(top,  #fc4100 0%, #d43700 28%, #ae1d00 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fc4100), color-stop(28%,#d43700), color-stop(100%,#ae1d00)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #fc4100 0%,#d43700 28%,#ae1d00 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #fc4100 0%,#d43700 28%,#ae1d00 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #fc4100 0%,#d43700 28%,#ae1d00 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #fc4100 0%,#d43700 28%,#ae1d00 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc4100', endColorstr='#ae1d00',GradientType=0 ); /* IE6-9 */
+		}
+	.btn_apply { display:inline-block; width:80px; height:32px; line-height:32px; font-size:13px; font-weight:600; color:#fff !important; text-align:center; background:#007cc3; border:none; border-radius:4px; cursor:pointer; }
+
+	.btn_small { display:inline-block; min-width:50px; height:24px; line-height:1; font-size:11px; color:#fff; background:#383c42; border:none; border-radius:0.1em; cursor:pointer; vertical-align:middle; }
+	.btn_small[type=submit] { display:inline-block; min-width:50px; height:24px; line-height:1; font-size:11px; color:#fff; background:#383c42; border:none; border-radius:0.1em; cursor:pointer; vertical-align:middle; }
+
+	.btn_small2 { display:inline-block; height:24px; line-height:24px; padding-left:10px; padding-right:10px; font-size:11px; color:#fff !important; background:#383c42; border:none; border-radius:0.2em; cursor:pointer; vertical-align:middle; }
+	.btn_small2[type=submit] { display:inline-block; height:24px; line-height:24px; padding-left:10px; padding-right:10px; font-size:11px; color:#fff !important; background:#383c42; border:none; border-radius:0.2em; cursor:pointer; vertical-align:middle; }
+
+/* 공통 : 버튼 정의 */
+	.btn_area { position:relative; margin-bottom:20px; overflow:hidden; }
+	.btn_area:after { display:block; content:""; clear:both; }
+	.btn_area .fl { display:block; float:left; }
+	.btn_area .fr { display:block; float:right;  margin-left:20px;}
+	.btn_area a, .btn_area input, .btn_area button { vertical-align:middle; }
+	.btn_area a { display:inline-block; }
+
+/* 공통 : 페이징 정의 */
+	.page_area { position:relative; margin-bottom:20px; padding:0; text-align:center; overflow:hidden; }
+	.page_area a, .page_area img, .page_area span { vertical-align:top; }
+	.page_area img { }
+	.page_area a span { display:inline-block; width:29px; height:29px; line-height:29px; color:#747474; font-weight:normal; border:1px solid #f0f0f0; background:#fff; }
+	.page_area span.current { display:inline-block; width:29px; height:29px; line-height:29px; color:#fff; font-weight:bold; border:1px solid #145ea9; background:#145ea9; }
+
+/* 공통 : 검색 정의 */
+	.search_area { position:relative; margin:0; padding:10px 0; text-align:center; background:#f4f4f4; border:1px solid #ddd; border-left:none; border-right:none; overflow:hidden; }
+	.search_area input, .search_area select, .search_area span, .search_area a, .search_area img { vertical-align:middle; }
+	.search_area select { width:100px; height:30px; border:1px solid #ccc; }
+	.search_area input[type=text] { width:345px; height:28px; text-indent:4px; border:1px solid #ccc; }
+
+/* 전체검색 결과 창 */
+	.search_result_area { display:block; }
+	.search_result_area table { width:100%; border-spacing:0; border-collapse:collapse; }
+	.search_result_area table td select { height:25px; }
+	.search_result_area table td input[type=text] { height:20px; }
+	.search_result_area table td input[type=submit] { display:inline-block; padding:5px 10px; color:#fff; background:#000; border:none; }
+
+	.search_result_area .top_table { margin-bottom:50px; }
+	.search_result_area .top_table td { padding:10px; }
+	.search_result_area .mid_table ul.top_ul { border-top:2px solid #000; }
+	.search_result_area .mid_table ul { display:block; list-style:none; margin:0; padding:0; }
+	.search_result_area .mid_table ul li { padding:10px; font-size:13px; border-bottom:1px solid #ddd; }
+	.search_result_area .mid_table ul li.bg_color { font-size:14px; background:#f5f5f5; }
+
+/* 회원탈퇴 */
+	.secede { position:relative; display:block; width:800px; overflow:hidden; }
+	.secede p { height:41px; line-height:41px; color:#fff; font-weight:bold; text-align:center; background:#000; }
+	.secede h4 { margin-left:5px; margin-bottom:32px; font-size:16px; color:#444; }
+	.secede h4 span { color:#ef731c; }
+	.secede .secede_block { position:relative; display:block; padding:50px 0 25px 0; text-align:left; color:#444; background:#fff; border-top:2px solid #000; }
+	.secede .secede_block .form_secede { width:100%; border-spacing:0; border-collapse:collapse; }
+	.secede .secede_block .form_secede th, .secede .secede_block .form_secede td { padding:10px; }
+	.secede .secede_block .form_secede th { padding-left:20px; text-align:right; background:#fff; }
+	.secede .secede_block .form_secede td { }
+	.secede .secede_block .form_secede td input[type=text] { height:22px; padding-left:5px; border:1px solid #ddd; }
+	.secede .secede_block .form_secede td input[type=password] { height:22px; padding-left:5px; border:1px solid #ddd; }
+	.secede .secede_block .form_secede td ul { display:block; list-style:none; margin:0; padding:0; }
+	.secede .secede_block .form_secede td ul li { display:block; margin:8px 0; }
+	.secede .secede_block .form_secede td ul li input, .secede .secede_block .form_secede td ul li label { vertical-align:middle; }
+	.secede .secede_block .form_secede td ul li input { margin-right:5px; }
+	.secede .bbs_btn_area .bbs_btn { position:absolute; right:25%; top:55px; width:80px; height:67px; font-size:15px; font-weight:bold; }

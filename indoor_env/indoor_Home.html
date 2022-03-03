@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script>
+      // 오늘 날짜 가져오기
+      window.onload = function(){
+        var dt = new Date();
+        var Year = dt.getFullYear();        
+        var Month = "" + (dt.getMonth()+1);
+        var Day = "" + dt.getDate();            
+        
+        if(Month.length < 2) Month = "0" + Month;
+        if(Day.length < 2) Day = "0" + Day;
+        
+        var Today = Year.toString() +"-"+ Month +"-"+ Day;
+        
+        document.getElementById("date-picker").value = Today;
+        add();
+      } 
+      
+      function printName()  {
+        const name = document.getElementById('date-picker').value;
+        add();
+      }
+    </script>
+    <script type="text/javascript">
+      function add() {
+          $.ajax({
+            url: "get_data.php",
+            type: "get",
+            data: {
+              date: $("#date-picker").val()
+            },
+          }).done(function(data){			
+            $("#input_data").html(data);		
+          });
+      };
+    </script>
+  </head>
+  <body>
+    <label for="date-picker">날짜 선택 :</label>
+
+    <input type="date" id="date-picker" onchange='printName()'
+           min="2021-01-01" max="2021-12-31">
+           <br>
+    
+    <div id='input_data'></div>
+  </body>
+</html>
+<style>
+  label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+  }
+
+  input,
+  label {
+      margin: .4rem 0;
+  }
+</style>
